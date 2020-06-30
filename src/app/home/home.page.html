@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Zoom
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" *ngFor="let imagen of imagenes; index as i">
+        <img class="galeria" src="assets/galeria/{{imagen}}" alt="" srcset="" (click)="verImagen(i)">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
